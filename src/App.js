@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import MyInit from './components/MyInit'
+import MyPropsx from './components/MyProps'
+import PersonProps from './components/PersonProps';
 
 function App() {
 
   function soma(a,b){
     return a+b
   }
+
+  function seuNome() {
+    var valux = document.getElementById('txt').value
+    console.log(valux);
+    return valux
+  }
+
   const valor = "** OK **"
 
   const urlPic = 'https://via.placeholder.com/150'
@@ -23,6 +32,10 @@ function App() {
           </div>
         </div>
         <MyInit/>
+
+        <MyPropsx nome="Jonas"/>
+        <PersonProps nome="Luca" idade="24" email="luca@gg.com" />
+
       </div>
       
     </div>
