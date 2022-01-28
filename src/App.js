@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import MyInit from './components/MyInit'
 import MyPropsx from './components/MyProps'
 import PersonProps from './components/PersonProps';
 import Eventos from './components/Eventos';
 import Form from './components/Form';
+import Ifs from './components/Ifs';
+import For from './components/For';
+import Condicao from './components/Condicao';
 
 function App() {
 
@@ -12,11 +15,11 @@ function App() {
     return a + b
   }
 
-  function seuNome() {
+  /*function seuNome() {
     var valux = document.getElementById('txt').value
     console.log(valux);
     return valux
-  }
+  }*/
 
   const valor = "** OK **"
 
@@ -40,7 +43,13 @@ function App() {
 
         <Eventos />
         <Form/>
-
+        <Ifs/>
+        <For/>
+        <div className='my-5'>
+          
+          <Condicao/>
+        </div>
+        
 
       </div>
 
